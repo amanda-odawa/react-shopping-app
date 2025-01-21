@@ -1,11 +1,9 @@
-/* index.css */
-
 /* Reset some basic styles for better cross-browser consistency */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: cursive;
 }
 
 body {
@@ -19,20 +17,18 @@ body {
 #root {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;  /* Center text for website title */
+  text-align: center; 
 }
 
-/* Center the main website title */
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #007bff;
+  text-shadow: 2px 2px #ff76bd;
 }
 
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
 }
 
 /* Flexbox layout for the product list */
@@ -40,12 +36,12 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;  /* Center the products horizontally */
-  margin-top: 30px; /* Added margin to separate the title from the products */
+  justify-content: center;  
+  margin-top: 30px; 
 }
 
 .product {
-  background-color: #fff;
+  background-color: #ffeff7;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -64,20 +60,20 @@ h2 {
 
 .product button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: #ff76bd;
+  color: #000000;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .product button:hover {
-  background-color: #0056b3;
+  background-color: #ffa0d1;
 }
 
 /* Cart Section */
 .cart {
-  background-color: #fff;
+  background-color: #ffeff7;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -104,16 +100,16 @@ h2 {
 }
 
 .cart-item button {
-  background-color: #dc3545;
-  color: #fff;
+  background-color: #ff76bd;
+  color: #000000;
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer;margin-top: 9px;
 }
 
 .cart-item button:hover {
-  background-color: #c82333;
+  background-color: #ffa0d1;
 }
 
 .cart-item .quantity {
@@ -146,12 +142,4 @@ h2 {
   .product {
     width: 100%;
   }
-}
-
-.product-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  object-fit: cover; /* This will ensure the images maintain their aspect ratio */
 }
