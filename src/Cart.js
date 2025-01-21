@@ -1,7 +1,7 @@
 import React from "react";
-import CartItem from "./Components/CartItem";
+import CartItem from "./CartItem";
 
-const Cart = ({ cart, updateCart }) => {
+const Cart = ({ cart, updateCartItem }) => {
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
     0
@@ -18,7 +18,7 @@ const Cart = ({ cart, updateCart }) => {
             <CartItem
               key={item.id}
               item={item}
-              updateCart={updateCart}
+              updateCartItem={updateCartItem}
             />
           ))}
           <h3>Total: ${totalPrice}</h3>

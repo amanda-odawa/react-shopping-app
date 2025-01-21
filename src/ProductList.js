@@ -1,7 +1,15 @@
 import React from "react";
 import Product from "./Product";
 
-const ProductList = ({ products, addToCart }) => {
+const products = [
+  { id: 1, name: "T-Shirt", price: 20 },
+  { id: 2, name: "Jeans", price: 40 },
+  { id: 3, name: "Sneakers", price: 60 },
+  { id: 4, name: "Hat", price: 15 },
+  { id: 5, name: "Socks", price: 5 },
+];
+
+const ProductList = ({ addToCart }) => {
   return (
     <div>
       <h2>Products</h2>
