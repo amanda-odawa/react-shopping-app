@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>React E-Commerce App</h1> {/* Website title */}
+      <h1>React Shopping Cart App</h1> {/* Website title */}
       <ProductList addToCart={addToCart} />
       <Cart cart={cart} updateCartItem={updateCartItem} />
     </div>
