@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ProductList from "./ProductList";
-import Cart from "./Cart";
+import ProductList from "./Components/ProductList";
+import Cart from "./Components/Cart";
 
 const App = () => {
   const products = [
