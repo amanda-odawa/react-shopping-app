@@ -134,3 +134,16 @@ h2 {
   font-size: 18px;
   text-align: right;
 }
+
+/* Other Responsive Features */
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+}

@@ -6,8 +6,8 @@ const App = () => {
   const [cart, setCart] = useState([]);
 
   const addToCart = (product) => {
-    const existingProduct = cart.find((item) => item.id === product.id);
-    if (existingProduct) {
+    const existingItem = cart.find((item) => item.id === product.id);
+    if (existingItem) {
       setCart(
         cart.map((item) =>
           item.id === product.id
@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Simple E-Commerce Cart</h1>
+      <h1>React E-Commerce App</h1> {/* Website title */}
       <ProductList addToCart={addToCart} />
       <Cart cart={cart} updateCartItem={updateCartItem} />
     </div>
