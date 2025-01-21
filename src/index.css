@@ -1,23 +1,131 @@
-body {
-  font-family: Arial, sans-serif;
+/* index.css */
+
+/* Reset some basic styles for better cross-browser consistency */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 20px;
+  font-size: 16px;
 }
 
 h1, h2 {
   color: #333;
+  margin-bottom: 10px;
 }
 
-button {
+h2 {
+  margin-top: 30px;
+}
+
+/* Container for the whole app */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flexbox layout for the product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px; /* Added margin to separate the title from the products */
+}
+
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33% - 20px);
+  text-align: center;
+}
+
+.product h3 {
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.product button {
+  padding: 10px 20px;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 8px 12px;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
-button:hover {
+.product button:hover {
   background-color: #0056b3;
+}
+
+/* Cart Section */
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-item p {
+  font-size: 16px;
+}
+
+.cart-item button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #c82333;
+}
+
+.cart-item .quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.cart-total {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: right;
 }

@@ -1,24 +1,27 @@
 import React from "react";
 
 const CartItem = ({ item, updateCartItem }) => {
-  const handleChange = (e) => {
-    const quantity = parseInt(e.target.value, 10);
-    updateCartItem(item.id, quantity);
+  const handleQuantityChange = (e) => {
+    updateCartItem(item.id, parseInt(e.target.value, 10));
+  };
+
+  const handleRemove = () => {
+    updateCartItem(item.id, 0);
   };
 
   return (
-    <div>
-      <p>
-        {item.name} - ${item.price} x
+    <div className="cart-item">
+      <p>{item.name} x {item.quantity} - ${item.price * item.quantity}</p>
+      <div>
         <input
           type="number"
-          min="0"
           value={item.quantity}
-          onChange={handleChange}
-          style={{ width: "50px", marginLeft: "5px" }}
+          onChange={handleQuantityChange}
+          min="0"
+          className="quantity"  // Add the quantity class for centering
         />
-        <button onClick={() => updateCartItem(item.id, 0)}>Remove</button>
-      </p>
+        <button onClick={handleRemove}>Remove</button>
+      </div>
     </div>
   );
 };
