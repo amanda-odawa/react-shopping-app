@@ -15,19 +15,24 @@ body {
   font-size: 16px;
 }
 
-h1, h2 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-h2 {
-  margin-top: 30px;
-}
-
-/* Container for the whole app */
+/* Center the entire body content */
 #root {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;  /* Center text for website title */
+}
+
+/* Center the main website title */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
 /* Flexbox layout for the product list */
@@ -35,7 +40,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-between;
+  justify-content: center;  /* Center the products horizontally */
   margin-top: 30px; /* Added margin to separate the title from the products */
 }
 
