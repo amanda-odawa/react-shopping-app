@@ -6,7 +6,9 @@ The React Shopping Cart App is a simple and interactive shopping cart applicatio
 - [Technologies and Tools](#technologies-and-tools)
 - [Features](#features)
 - [Demo](#demo)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
+- [Available Scripts](#available-scripts)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -32,6 +34,12 @@ The React Shopping Cart App is a simple and interactive shopping cart applicatio
 ### Demo
 [View Live Demo](#) *(Demo link to be added once hosted)*
 
+### Prerequisites
+Before running the app, make sure you have the following installed:
+
+- Node.js (>= 14.0)
+- npm (>= 6.0)
+
 ### Installation
 1. Clone the repository to your local machine:
     ```bash
@@ -52,6 +60,7 @@ In the project directory, you can run:
     npm start
     ```
     Runs the app in the development mode.
+
     Open http://localhost:3000 to view it in your browser. The page wil reload when you make changes. You may also see any lint errors in the console.
 2. ```bash
     npm test
@@ -61,18 +70,19 @@ In the project directory, you can run:
     npm run build
     ```
     Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
+
     The build is minified and the filenames include the hashes.
     Your app is ready to be deployed!
 4. ```bash
     npm run eject
     ```
-    Note: This is a one-way operation. Once you ```bash eject```, you can't go back!
+    Note: This is a one-way operation. Once you ```eject```, you can't go back!
 
-    If you aren't satisfied with the build tool and configuration choices, you can ```bash eject``` at any time. This command will remove the single build dependency from your project.
+    If you aren't satisfied with the build tool and configuration choices, you can ```eject``` at any time. This command will remove the single build dependency from your project.
 
-    Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc.) right into your project so you have full control over them. All of the commands except ```bash eject ``` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
+    Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc.) right into your project so you have full control over them. All of the commands except ```eject ``` will still work, but they will point to the copied scripts so you can tweak them. At this point, you're on your own.
 
-    You don't have to ever use ```bash eject```. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you're ready for it.
+    You don't have to ever use ```eject```. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However, we understand that this tool wouldn't be useful if you couldn't customize it when you're ready for it.
 
 ### Usage
 Once the app is running, navigate to it in your browser. You can:
