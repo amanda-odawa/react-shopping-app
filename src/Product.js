@@ -6,7 +6,7 @@ const Product = ({ product, addToCart }) => {
        <img
         src={product.image}
         alt={product.name}
-        style={{ width: "270px", height: "200px", objectFit: "cover", borderRadius: "7px" }}
+        style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "7px" }}
       />
       <h3>{product.name}</h3>
       <p>${product.price}</p>
